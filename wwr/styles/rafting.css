@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --primary-color: #11172d;
+    --secondary-color: #cde0dc;
+    --accent1-color: #f8ffd6;
+    --accent2-color: #75a99c;
+
+    --heading-font: 'Patrick Hand';
+    --paragraph-font: 'Lato';
+
+    --nav-background-color: #75a99c;
+    --nav-link-color: #cde0dc;
+    --nav-hover-link-color: #75a99c;
+    --nav-hover-background-color: #cde0dc;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color)
+}
+
+div.hero {
+    position: relative;
+    width: 100%;
+}
+
+div.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.hero h1 {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    margin: auto;
+	background: rgba(200, 200, 200, .5);
+    width: 100%;
+}
+
+div.hero article {
+	position: absolute;
+	background: rgba(200, 200, 200, .5);
+    bottom: 10px;
+    width: 100%;
+}
+
+div.hero article img {
+    float: right;
+    height: auto;
+    width: 25%;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h2, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
