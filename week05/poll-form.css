@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', sans-serif
+}
+
+header {
+    width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+    color: purple;
+}
+
+form {
+    background: blanchedalmond;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: grid;
+    border-radius: 1rem;
+    width: 650px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+legend {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: .5rem;
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.1rem;
+    background-color: purple;
+    color: white;
+    width: fit-content;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: violet;
+    color: black;
+}
+
+footer {
+    margin: 1rem;
+    text-align: center;
+    font-size: smaller;
+    color: purple;
+    border-top: 1px solid black;
+    padding: .5rem;
+    width: 650px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+}
