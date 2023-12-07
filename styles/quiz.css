@@ -36,7 +36,6 @@ fieldset {
     border: none;
     margin: .5rem;
     padding: 1rem;
-    align-items: left;
 }
 
 label,
@@ -50,6 +49,7 @@ textarea {
 label {
     text-align: left;
     padding-right: .5rem;
+    padding-top: .5rem;
 }
 
 input,
