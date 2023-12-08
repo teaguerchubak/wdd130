@@ -188,7 +188,7 @@ figcaption {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.team h2 {
+.team h1 {
     grid-area: 1/1/2/4;
     justify-self: center;
     align-self: center;
@@ -201,6 +201,41 @@ figcaption {
     align-self: center;
     justify-self: center;
     padding: 5px;
+}
+
+.maparea {
+    border: 3px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.address {
+align-self: center;
+justify-self: center;
+}
+
+.map {
+    align-self: center;
+    justify-self: right;
+    border: none;
+    height: 100%;
+}
+
+.address h2 {
+    text-align: left;
+}
+
+.address ul {
+    list-style-type: none;
+}
+
+.address li {
+    margin: 1rem 0;
+}
+
+.address p {
+    text-align: left;
+    font-weight: bold;
 }
 
 form {
