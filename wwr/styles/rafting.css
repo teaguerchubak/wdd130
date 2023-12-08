@@ -178,3 +178,119 @@ figcaption {
     align-items: center;
     justify-content: center;
 }
+
+.team {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team h2 {
+    grid-area: 1/1/2/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.team img {
+    grid-row: 2/3;
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+}
+
+form {
+    background: var(--secondary-color);
+    margin: 15px auto;
+    border: 3px solid var(--primary-color);
+    padding: 1rem;
+    display: grid;
+    border-radius: 1rem;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+label,
+input,
+button,
+textarea {
+    font-family: var(--paragraph-font);
+}
+
+label {
+    text-align: left;
+    padding-right: .5rem;
+}
+
+.message-purpose {
+    text-align: left;
+}
+
+legend {
+    text-align: center;
+}
+
+input,
+textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: fit-content;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.texts {
+    width: 100%;
+}
+
+.user-info,
+.message-purpose,
+.messagebox {
+    border: none;
+    display: block;
+}
+
+.user-info {
+    grid-template-columns: 1fr 1fr;
+}
