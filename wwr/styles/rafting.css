@@ -11,10 +11,10 @@
     --heading-font: 'Patrick Hand';
     --paragraph-font: 'Lato';
 
-    --nav-background-color: #75a99c;
+    --nav-background-color: #cde0dc;
     --nav-link-color: #11172d;
-    --nav-hover-link-color: #11172d;
-    --nav-hover-background-color: #cde0dc;
+    --nav-hover-link-color: #cde0dc;
+    --nav-hover-background-color: #11172d;
 }
 
 header {
@@ -365,10 +365,50 @@ button:hover {
     display: block;
     text-align: center;
     background: var(--secondary-color);
+    position: relative;
 }
 
 .trips-action h2 {
     text-align: center;
     background: rgba(200, 200, 200, .5);
     padding: 20px;
+    width: 91.5%;
 }
+
+.trips-action img {
+    opacity: .3;
+    width: 50%;
+    height: auto;
+}
+
+.trips-action button {
+    margin-top: 10%;
+}
+
+.trips p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 20px;
+    width: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .noborder {
+  border: none;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
