@@ -372,12 +372,11 @@ button:hover {
     text-align: center;
     background: rgba(200, 200, 200, .5);
     padding: 20px;
-    width: 91.5%;
 }
 
 .trips-action img {
     opacity: .3;
-    width: 50%;
+    max-width: 50%;
 }
 
 .trips-action button {
