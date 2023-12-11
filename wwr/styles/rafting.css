@@ -84,7 +84,8 @@ h2, h2, h3, h4, h5, h6 {
 }
 
 p {
-    padding: 25px;
+    padding: 5px;
+    font-family: var(--paragraph-font);
 }
 
 nav {
@@ -113,12 +114,13 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     border: 3px solid var(--accent2-color);
+    align-items: center;
 }
 
 .history {
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 3px solid var(--primary-color);
     display: grid;
 }
@@ -328,4 +330,45 @@ button:hover {
 
 .user-info {
     grid-template-columns: 1fr 1fr;
+}
+
+.trips {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 1fr 1fr;
+    position: relative;
+}
+
+.trips h1 {
+    grid-area: 1/1/2/2;
+    justify-self: center;
+    align-self: center;
+}
+
+.trips img {
+    grid-row: 2/4;
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+}
+
+.trips-action {
+    grid-area: 1/2/3/3;
+    border-bottom: 3px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    display: block;
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+.trips-action h2 {
+    text-align: center;
+    background: rgba(200, 200, 200, .5);
+    padding: 20px;
 }
