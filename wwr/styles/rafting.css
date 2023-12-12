@@ -441,3 +441,29 @@ table {
 .home-form {
     margin-left: 10px;
 }
+
+.home-grid {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home-grid img {
+    grid-row: 2/3;
+    max-width: 90%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+}
+
+.home-grid p,
+.home-grid h2 {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 20px;
+    width: 90%;
+}
